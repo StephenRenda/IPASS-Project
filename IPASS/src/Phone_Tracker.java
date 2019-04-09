@@ -13,7 +13,7 @@ public class Phone_Tracker {
         	reader = new BufferedReader(new FileReader("/Users/Public/Phone_DataBase.txt"));
         	// File has format like this
         	// Stephen 1 N street
-			// John 0 Address 
+        	// John    0 Address 
         	
         	String line = reader.readLine();
         	records.add(line);
