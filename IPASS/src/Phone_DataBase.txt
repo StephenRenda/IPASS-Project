@@ -1,3 +1,2 @@
-User        Status
-===================
-Israel      Active
+User Name	Last Location
+=============================
