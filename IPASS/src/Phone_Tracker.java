@@ -1,5 +1,7 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -57,10 +59,16 @@ public class Phone_Tracker {
 	
 	/* @param name
 	 * @param address
-	 * Write the user phone status and address
+	 * Write the user name and last location of phone to Phone_DataBase.txt
 	 */
 	private static void updatePhoneIsLost(String name, String address) {
-		// To be implemented by Israel
+        try (FileWriter writer = new FileWriter("/Users/Public/Phone_DataBase.txt", true);
+             BufferedWriter bw = new BufferedWriter(writer)) {
+        	System. out. print(System.lineSeparator());
+            bw.write(name + "\t\t" + address);
+            bw.newLine();
+        } catch (IOException e) {
+            System.err.format("IOException: %s%n", e);
+        }
 	}
-	
 }
