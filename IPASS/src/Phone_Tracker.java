@@ -62,12 +62,14 @@ public class Phone_Tracker {
 	 * Write the user name and last location of phone to Phone_DataBase.txt
 	 */
 	private static void updatePhoneIsLost(String name, String address) {
+		
         try (FileWriter writer = new FileWriter("/Users/Public/Phone_DataBase.txt", true);
-             BufferedWriter bw = new BufferedWriter(writer)) {
+        	BufferedWriter bw = new BufferedWriter(writer)) {
         	System. out. print(System.lineSeparator());
-            bw.write(name + "\t\t" + address);
-            bw.newLine();
-        } catch (IOException e) {
+        	bw.write(name + "\t\t" + address);
+        	bw.newLine();
+        } 
+        catch (IOException e) {
             System.err.format("IOException: %s%n", e);
         }
 	}
