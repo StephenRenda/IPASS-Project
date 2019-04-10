@@ -1,2 +1,2 @@
-User Name	Last Location
+User Name	    Last Location
 =============================
