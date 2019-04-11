@@ -1,2 +1,4 @@
-User Name	    Last Location
+User Name	Last Location
 =============================
+Israel		School
+Austin		Park
