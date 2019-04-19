@@ -1,4 +1,7 @@
-User Name	Last Location
-=============================
-Israel		School
-Austin		Park
+Stephen, Renda, 1, blank
+John, Doe, 0, blank
+Danielle, Stevenson, 1, blank
+Israel, Jimenez, 0, blank
+Austin, Heritage, 0 , blank
+Swabinash, Swarnaraja, 0 , blank
+Pezhman, Kavianikosarkhizi, 0, blank
