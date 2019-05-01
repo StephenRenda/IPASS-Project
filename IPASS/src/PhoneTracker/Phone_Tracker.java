@@ -64,10 +64,10 @@ public class Phone_Tracker {
 	        	{//Filling person object array with Server data.
 	        		person[i] = new Person(lines[i]); 
 	        	}
-	        	//Set "phone is lost" by changing lost to 1.
 	        	
+	        	//Set "phone is lost" by changing lost to 1.
+	        	setPhoneIsLost(name);
 				
-	 
 				for (index = 0; index < person.length-1;index++)
 				{// Finds index, so we know what line to replace
 					if (name.contentEquals(person[index].getFirstName()))
@@ -121,6 +121,33 @@ public class Phone_Tracker {
         } 
         catch (IOException e) {
             System.err.format("IOException: %s%n", e);
+        }
+	}
+	
+	private static void setPhoneIsLost(String s) {
+        String content = "";
+         
+        try
+        {
+        	BufferedReader br = new BufferedReader(new FileReader(Server));
+            String line = br.readLine();
+             
+            while (line != null) 
+            {
+            	content = content + line + System.lineSeparator();
+                line = br.readLine();
+            }
+            br.close();
+             
+            int i = content.indexOf('0', content.indexOf(s));
+            StringBuilder newContent = new StringBuilder(content);
+            newContent.setCharAt(i, '1');
+
+            BufferedWriter bw = new BufferedWriter(new FileWriter(Server));
+            bw.write(newContent.toString());
+            bw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 	}
 }
