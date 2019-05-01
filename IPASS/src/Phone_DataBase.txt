@@ -1,7 +1,7 @@
-Stephen, Renda, 1, blank
+Stephen, Renda, 1, Mall
 John, Doe, 0, blank
 Danielle, Stevenson, 1, blank
 Israel, Jimenez, 0, blank
-Austin, Heritage, 0 , blank
+Austin, Heritage, 0 , Store
 Swabinash, Swarnaraja, 0 , blank
 Pezhman, Kavianikosarkhizi, 0, blank

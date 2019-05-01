@@ -61,7 +61,7 @@ public class Person implements Serializable	{
 	    }
         @Override
         public String toString() {
-            return this.first_name + "," + this.last_name + "," +
-            	   this.isLost + "," + this.location;
+            return this.first_name + ", " + this.last_name + ", " +
+            	   this.isLost + ", " + this.location;
         }        
 	}
